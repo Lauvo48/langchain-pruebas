@@ -28,7 +28,7 @@ if 'flowmessages' not in st.session_state:
         SystemMessage(content="Eres un asistente servicial y amigable.")]
 
 
-## Recibe el texto del usuario
+## recibe el texto del usuario
 def get_openai_response(question: str) -> str:
     """Envía la pregunta al modelo y actualiza el historial en session_state."""
     st.session_state["flowmessages"].append(HumanMessage(content=question))
