@@ -3,7 +3,7 @@
 import os # leer variables de entorno
 from dotenv import load_dotenv # cargar variables de entorno desde un archivo .env
 import streamlit as st # framework para crear apps web
-import Proyecto_2.constants as constants # archivo con la llave de openai
+import constants # archivo con la llave de openai
 
 from langchain.llms import OpenAI # modelo chat moderno
 
