@@ -1,3 +1,12 @@
-".env" 
-".env" 
-.env 
+# entornos
+myenv/
+.venv/
+env/
+
+# cachés y artefactos
+__pycache__/
+*.pyc
+
+# claves/secretos
+constants.py
+*.env
