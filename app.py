@@ -1,4 +1,5 @@
-# Chat Bot Laura
+# Chat Bot Laura Final 
+
 import os # leer variables de entorno
 from dotenv import load_dotenv # cargar variables de entorno desde un archivo .env
 import streamlit as st # framework para crear apps web
