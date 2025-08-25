@@ -8,3 +8,8 @@ langchain-openai
 pydantic
 PyPDF2
 google.generativeai
+chromadb
+faiss-cpu
+langchain-google-genai
+numpy
+
