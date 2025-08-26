@@ -1,12 +1,9 @@
 # entornos
 myenv/
-.venv/
-env/
 
-# cachés y artefactos
+# caches y artefactos
 __pycache__/
 *.pyc
 
 # claves/secretos
 constants.py
-*.env
