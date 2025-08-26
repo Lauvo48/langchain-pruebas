@@ -11,5 +11,6 @@ google.generativeai
 chromadb
 faiss-cpu
 langchain-google-genai
+Pylance
 numpy
 

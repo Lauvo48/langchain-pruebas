@@ -20,7 +20,7 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.docstore.document import Document
 
-import constants  # Debe contener OPENAI_API_KEY = "..."
+import constants  # para API Key
 
 # ===============================
 # CONFIGURACIÓN DE LA APP
@@ -42,7 +42,6 @@ def get_embeddings():
     if not api_key:
         st.error("Falta OPENAI_API_KEY en constants.py")
         st.stop()
-    # Modelo rápido y económico
     return OpenAIEmbeddings(model="text-embedding-3-small", api_key=api_key)
 
 @st.cache_resource
@@ -64,7 +63,6 @@ def extract_text_from_pdfs(uploaded_files: List[Any]) -> List[Document]:
     for pdf in uploaded_files:
         try:
             reader = PdfReader(pdf)
-            # Para demo: si quieres, limita páginas: reader.pages[:5]
             for i, page in enumerate(reader.pages):
                 page_text = page.extract_text() or ""
                 if page_text.strip():
